@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html  >
+<head>
+  <!-- Site made with Mobirise Website Builder v4.11.6, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.11.6, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/twitlit-logo-dark-128x69.png" type="image/x-icon">
+  <meta name="description" content="Learn  about the development of the Python scripts that are behind Project TwitLit">
+  
+  <title>About the Python Scripts</title>
+  <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/dropdown/css/style.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+</head>
+<body>
+  <section class="menu cid-s5nTbSPzxz" once="menu" id="menu1-4q">
+
+    
+
+    <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </button>
+        <div class="menu-logo">
+            <div class="navbar-brand">
+                <span class="navbar-logo">
+                    <a href="home.html">
+                         <img src="assets/images/twitlit-logo-whiteclear-160x86.png" alt="Mobirise" title="" style="height: 5rem;">
+                    </a>
+                </span>
+                
+            </div>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item">
+                    <a class="nav-link link text-white display-4" href="home.html">
+                        
+                        Home</a>
+                </li><li class="nav-item"><a class="nav-link link text-white display-4" href="people.html">
+                        
+                        People</a></li><li class="nav-item dropdown"><a class="nav-link link dropdown-toggle text-white display-4" href="project.html" data-toggle="dropdown-submenu" aria-expanded="false">
+                        
+                        Project</a><div class="dropdown-menu"><a class="dropdown-item text-white display-4" href="about.html">About</a><a class="dropdown-item text-white display-4" href="data.html">Data</a><a class="dropdown-item text-white display-4" href="doc.html">Documentation</a><a class="dropdown-item text-white display-4" href="https://github.com/TwitLit/TwitLitSource" target="_blank">GitHub</a></div></li><li class="nav-item"><a class="nav-link link text-white display-4" href="resources.html">
+                        
+                        Resources</a></li>
+                <li class="nav-item">
+                    <a class="nav-link link text-white display-4" href="blog.html">Blog</a>
+                </li><li class="nav-item"><a class="nav-link link text-white display-4" href="contact.html">Contact</a></li></ul>
+            
+        </div>
+    </nav>
+</section>
+
+<section class="engine"><a href="https://mobirise.info/l">free web templates</a></section><section class="mbr-section content5 cid-s5k0kbgW7J" id="content5-2t">
+
+    
+
+    
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="title col-12 col-md-8">
+                <h2 class="align-center mbr-bold mbr-white pb-3 mbr-fonts-style display-1">THE PYTHON SCRIPTS</h2>
+                
+                
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section content4 cid-s5k1eOm26Y" id="content4-2u">
+
+    
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="title col-12 col-md-8">
+                <h2 class="align-center pb-3 mbr-fonts-style display-2">
+                    The Python Scraper</h2>
+                
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-s5k1fCcIcI" id="content1-2v">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-10"><p>In order to analyze Twitter data, I first needed a reliable (and inexpensive) way to gather the necessary data. As part of the Twitter Developer Agreement and Policy, Twitter requires that individuals scraping Twitter go through one of their sanctioned seach APIs (Application Programming Interface). Twitter offers three tiers of search APIs &nbsp;for their site: Standard, Premium, and Enterprise. The Standard API, which is available for free use, only searches “against a sampling of recent Tweets published in the past 7 days,” meaning that the data is severely limited in both time (to the past seven days) and completeness (only a portion of tweets published in the past seven days will be collected).  The Premium and Enterprise APIs allow for more robust searches going back to 2006 (when Twitter was founded) and promise full data fidelity. Given, however, that the Premium and Enterprise APIs are designed to assist marketing companies collect data to better understand and market to their user base, these APIs can be pricy to use and offer features irrelevant to the kind of academic research undertaken in this project. Alternative, free Twitter scraping services, such as the Twarc API search by Documenting the Now (DocNow), is similarly limited in terms of collection rates and limits as that of Twitter’s Standard API. &nbsp;</p><p>Given these limitations, I decided to search for an alternative, and I was fortunately granted a Prototyping Fellowship through the University of Virginia to assist with the development of this script. Alyssa Collins, who was co-recipient with myself on the grant, and I fortunately found a pre-existing Twitter scraping script, developed by Tom K. Dickinson, which was freely available on GitHub. This script latched onto one of Twitter's search APIs, but it was able to collect data going back to Twitter's inception in 2006, and it was not restricted by search sampling but promised full data fidelity. While extremely useful, this script did not collect all of the data that I needed for <em>Project TwitLit</em>, so Alyssa, myself, and Shane Lin (a developer at the University of Virginia Scholars’ Lab) set out to modify this script. Like Dickinson's original script, our modified python scraping script can likewise search for terms from 2006 to the present while maintaining full data fidelity. We also modified the script to automatically rename files according to the search term used. Additionally, we modified the kinds of metadata that the python script would allow us to gather about each tweet. Whereas the original script collected eight fields of metadata about each tweet (the Tweet ID, full text, user ID, user screen name, user name, date and time when the tweet was created, number of retweets, and number of favorites), we modified the script to search for additional metadata related to user description, user language, user location, user time-zone, and tweet translation status. The full list of data that we can collect through this Python script is listed below:</p></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-s5k5WgMKEB" id="content1-2z">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8"><p><strong>created_at
+</strong></p><p><strong>id
+</strong></p><p><strong>text
+</strong></p><p><strong>in_reply_to_user_id
+</strong></p><p><strong>user__id
+</strong></p><p><strong>user__name
+</strong></p><p><strong>user__screen_name
+</strong></p><p><strong>user__location
+</strong></p><p><strong>user__description
+</strong></p><p><strong>user__followers_count
+</strong></p><p><strong>user__friends_count
+</strong></p><p><strong>user__created_at
+</strong></p><p><strong>user__favourites_count
+</strong></p><p><strong>user__utc_offset
+</strong></p><p><strong>user__time_zone
+</strong></p><p><strong>user__geo_enabled
+</strong></p><p><strong>user__verified
+</strong></p><p><strong>user__statuses_count
+</strong></p><p><strong>user__lang
+</strong></p><p><strong>user__is_translator
+</strong></p><p><strong>user__is_translation_enabled
+</strong></p><p><strong>user__translator_type
+</strong></p><p><strong>geo
+</strong></p><p><strong>coordinates
+</strong></p><p><strong>place
+</strong></p><p><strong>retweet_count
+</strong></p><p><strong>favorite_count
+</strong></p><p><strong>lang
+</strong></p></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-s5k1iXXjke" id="content1-2y">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8"><p><strong>__________</strong></p></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section content4 cid-s5k1gq1koi" id="content4-2w">
+
+    
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="title col-12 col-md-8">
+                <h2 class="align-center pb-3 mbr-fonts-style display-2">
+                    JSONL Counter</h2>
+                
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-s5k1hdXwpQ" id="content1-2x">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-10">The JSONL Counter Python Script is a simple script written by Varundev Sukhil, who is currently a PhD Candidate in Computer Engineering at the University of Virginia, in order to count the number of lines in a JSONL file. Once the results from the Twitter Scraper employed in the project (see above) are collected, these results can be easily turned into a JSONL file through tools developed by Documenting the Now (DocNow). In a JSONL file, each Twitter result (including full metadata associated with each Tweet) are rendered as a single line. Using the JSONL Counter Python Script, I was easily able to count the number of lines (and hence the number of tweets) in each JSONL file.</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-s5k80M8Vp3" id="content1-30">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8"><p><strong>__________</strong></p></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section info1 cid-s5k8OS2EWO" id="info1-32">
+
+    
+
+    
+    <div class="container">
+        <div class="row justify-content-center content-row">
+            <div class="media-container-column title col-12 col-lg-7 col-md-6">
+                <h3 class="mbr-section-subtitle align-left mbr-light pb-3 mbr-fonts-style display-5">
+                    Visit GitHub to Download the Scripts</h3>
+                <h2 class="align-left mbr-bold mbr-fonts-style display-2">
+                    PYTHON SCRIPTS</h2>
+            </div>
+            <div class="media-container-column col-12 col-lg-3 col-md-4">
+                <div class="mbr-section-btn align-right py-4"><a class="btn btn-primary display-4" href="https://github.com/TwitLit/TwitLitSource" target="_blank">PROJECT TWITLIT: GITHUB</a></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-s5k8QIp4Qk" id="content1-33">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8"><p><strong>__________</strong></p></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section info1 cid-s5k8eu6iop" id="info1-31">
+
+    
+
+    
+    <div class="container">
+        <div class="row justify-content-center content-row">
+            <div class="media-container-column title col-12 col-lg-7 col-md-6">
+                <h3 class="mbr-section-subtitle align-left mbr-light pb-3 mbr-fonts-style display-5">Download the Instructions for Using the Scripts</h3>
+                <h2 class="align-left mbr-bold mbr-fonts-style display-2">INSTRUCTIONS</h2>
+            </div>
+            <div class="media-container-column col-12 col-lg-3 col-md-4">
+                <div class="mbr-section-btn align-right py-4"><a class="btn btn-primary display-4" href="assets/files/How To Scrape Twitter.pdf" target="_blank">DOWNLOAD NOW</a></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section once="footers" class="cid-rNBqWErBOR" id="footer6-2s">
+
+    
+
+    
+
+    <div class="container">
+        <div class="media-container-row align-center mbr-white">
+            <div class="col-12">
+                <p class="mbr-text mb-0 mbr-fonts-style display-7">
+                    © Copyright 2020 Christian Howard-Sukhil - All Rights Reserved
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/dropdown/js/nav-dropdown.js"></script>
+  <script src="assets/dropdown/js/navbar-dropdown.js"></script>
+  <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  
+</body>
+</html>
